@@ -2,8 +2,7 @@
 // import { example } from '../example.js';
 import { add_two, subt } from '../calculations.js';
 import { add } from '../calculations';
-import { subt } from '../calculations.js';
-
+import { mult } from '../calculations';
 
 const test = QUnit.test;
 
@@ -42,8 +41,15 @@ test('add(4,5) function', (expect) => {
 });
 test('subt function', (expect) => {
     const input1 = 3;
-    const input2 = 2;
-    const expected = 6;
+    const input2 = 1;
+    const expected = 2;
     const actual = subt(input1, input2);
     expect.equal(actual, expected)
+})
+test('mult function' , (expect) =>{
+    const input1 = 3;
+    const input2 = 2;
+    const expected = 6;
+    const actual = mult(input1, input2);
+    expected.equal(actual, expected)
 })

@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { add, subt } from'./calculations.js';
+import { add, subt, mult } from'./calculations.js';
 
 
 
@@ -13,6 +13,17 @@ const input1s = document.getElementById('firstInputs');
 const input2s = document.getElementById('secondInputs');
 const buttons = document.getElementById('computes');
 const answersub = document.getElementById('answerSub');
+const input1m = document.getElementById('firstInputm');
+const input2m = document.getElementById('secondInputm');
+const buttonm = document.getElementById('computem');
+const answermult = document.getElementById('answerMul');
+
+
+
+
+
+
+
 //console.log(input2, input1, button, answeradd)
 button.addEventListener ('click', ()=>{
     //let final = (input1 + input2);
@@ -32,4 +43,11 @@ buttons.addEventListener('click', ()=> {
   const results = subt(value1s, value2s);
   answersub.textContent = results;
 });
+buttonm.addEventListener('click', ()=> {
+
+  const value1m = Number(input1m.value);
+  const value2m = Number(input2m.value);
+  const resultm = mult(value1m, value2m);
+  answermult.textContent = resultm;
+})
 

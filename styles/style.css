@@ -32,4 +32,14 @@ margin-top: 50px;
     border: 1px solid black;
     padding: 20px
 }
+#multiplication {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 100px);
+    text-align: center;
+    font-size: larger;
+    background-color: darkgreen;
+    border: 1px solid black;
+    padding: 20px
+}
 
