@@ -52,5 +52,40 @@ margin-top: 50px;
     border: 1px solid black;
     padding: 20px
 }
+#multiplication > button:hover {
+    background-color: black;
 
+}
+#addition > button:hover {
+    background-color: black;
+}
+#division > button:hover {
+    background-color: black;
+}
+#subtraction > button:hover {
+    background-color: black;
+    play
+}
+body {
+    background-image: url('https://media.giphy.com/media/10kABVanhwykJW/giphy.gif');
+    background-repeat: round;
+}
+#compute{
+    background-color: cornflowerblue;
+}
+#computes{
+    background-color: cornflowerblue;
+}
+#computed{
+    background-color: cornflowerblue;
+}
+#computem{
+    background-color: cornflowerblue;
+}
+#docname{
+    background-color: chartreuse; 
+    justify-content: center;
+    align-content: center;  
+    
+}
 

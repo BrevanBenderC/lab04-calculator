@@ -63,4 +63,33 @@ buttond.addEventListener('click', ()=> {
   answerdiv.textContent = resultd;
 })
 
+const addButton = document.getElementById('compute');
+const subButton = document.getElementById('computes');
+const mulButton = document.getElementById('computm');
+const divButton = document.getElementById('computd');
+const noise = document.getElementById('rick-rolled');
 
+addButton.addEventListener('click', ()=> {
+
+    noise.play()
+
+
+})
+subButton.addEventListener('click', ()=> {
+
+  noise.play()
+
+
+})
+mulButton.addEventListener('click', ()=> {
+
+  noise.play()
+
+
+})
+divButton.addEventListener('click', ()=> {
+
+  noise.play()
+
+
+})
