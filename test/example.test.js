@@ -53,3 +53,11 @@ test('mult function' , (expect) =>{
     const actual = mult(input1, input2);
     expected.equal(actual, expected)
 })
+test('div function' , (expect) =>{
+    const input1 = 6;
+    const input2 = 2;
+    const expected = 3;
+    const actual = div(input1, input2);
+    expected.equal(actual, expected)
+})
+
