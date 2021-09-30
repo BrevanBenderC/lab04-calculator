@@ -1,7 +1,10 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { add_two } from '../calculations.js';
+import { add_two, subt } from '../calculations.js';
 import { add } from '../calculations';
+import { subt } from '../calculations.js';
+
+
 const test = QUnit.test;
 
 test('test add_two function', (expect) => {
@@ -37,3 +40,10 @@ test('add(4,5) function', (expect) => {
     const actual = add(input1, input2);
     expect.equal(actual, expected);
 });
+test('subt function', (expect) => {
+    const input1 = 3;
+    const input2 = 2;
+    const expected = 6;
+    const actual = subt(input1, input2);
+    expect.equal(actual, expected)
+})
