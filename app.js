@@ -13,7 +13,7 @@ button.addEventListener ('click', ()=>{
   const value1 = Number(input1.value);
   const value2 = Number(input2.value);
   const result = add(value1, value2);
-  console.log(result);
+  answeradd.textContent = result;
 
 });
 
