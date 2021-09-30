@@ -1,3 +1,16 @@
+
+body {
+margin-top: 50px;
+}
+
+
+
+#docname{
+    align-content: center;
+    text-align: center;
+}
+
+
 #addition {
     display: grid;
     justify-content: center;
@@ -5,4 +18,6 @@
     text-align: center;
     font-size: larger;
     background-color: aqua;
+    border: 1px solid black;
+    padding: 20px
 }
