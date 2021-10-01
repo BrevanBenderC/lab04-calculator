@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { add, subt, mult, div } from'./calculations.js';
+import { add, subt, mult, div, pyth, int, mod } from './calculations.js';
 
 
 
@@ -21,6 +21,18 @@ const input1d = document.getElementById('firstInputd');
 const input2d = document.getElementById('secondInputd');
 const buttond = document.getElementById('computed');
 const answerdiv = document.getElementById('answerDiv');
+const input1p = document.getElementById('firstInputp');
+const input2p = document.getElementById('secondInputp');
+const buttonp = document.getElementById('computep');
+const answerpyt = document.getElementById('answerPyt');
+const input1i = document.getElementById('firstInputi');
+const input2i = document.getElementById('secondInputi');
+const buttoni = document.getElementById('computei');
+const answerint = document.getElementById('answerInt');
+const input1mo = document.getElementById('firstInputmo');
+const input2mo = document.getElementById('secondInputmo');
+const buttonmo = document.getElementById('computemo');
+const answermod = document.getElementById('answerMod');
 
 
 
@@ -62,12 +74,46 @@ buttond.addEventListener('click', ()=> {
   const resultd = div(value1d, value2d);
   answerdiv.textContent = resultd;
 })
+buttoni.addEventListener('click', ()=> {
+
+  const value1i = Number(input1i.value);
+  const value2i = Number(input2i.value);
+  const resulti = int(value1i, value2i);
+  answerint.textContent = resulti;
+})
+
+
+buttonp.addEventListener('click', ()=> {
+
+  const value1p = Number(input1p.value);
+  const value2p = Number(input2p.value);
+  const resultp = pyth(value1p, value2p);
+  answerpyt.textContent = resultp;
+})
+buttonmo.addEventListener('click', ()=> {
+
+  const value1mo = Number(input1mo.value);
+  const value2mo = Number(input2mo.value);
+  const resultmo = mod(value1mo, value2mo);
+  answermod.textContent = resultmo;
+})
+
+
+
 
 const addButton = document.getElementById('compute');
 const subButton = document.getElementById('computes');
-const mulButton = document.getElementById('computm');
-const divButton = document.getElementById('computd');
+const mulButton = document.getElementById('computem');
+const divButton = document.getElementById('computed');
+const pythButton = document.getElementById('computep');
+const intButton = document.getElementById('computei');
+const modButton = document.getElementById('computemo');
+
 const noise = document.getElementById('rick-rolled');
+
+
+
+
 
 addButton.addEventListener('click', ()=> {
 
@@ -88,6 +134,24 @@ mulButton.addEventListener('click', ()=> {
 
 })
 divButton.addEventListener('click', ()=> {
+
+  noise.play()
+
+
+})
+modButton.addEventListener('click', ()=> {
+
+  noise.play()
+
+
+})
+pythButton.addEventListener('click', ()=> {
+
+  noise.play()
+
+
+})
+intButton.addEventListener('click', ()=> {
 
   noise.play()
 

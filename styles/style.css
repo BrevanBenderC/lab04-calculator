@@ -62,10 +62,30 @@ margin-top: 50px;
 #division > button:hover {
     background-color: black;
 }
+#Int > button:hover {
+    background-color: black;
+    play
+}
+#Pyth > button:hover {
+    background-color: black;
+    play
+}
+#Mod > button:hover {
+    background-color: black;
+    play
+}
 #subtraction > button:hover {
     background-color: black;
     play
 }
+
+
+
+
+
+
+
+
 body {
     background-image: url('https://media.giphy.com/media/10kABVanhwykJW/giphy.gif');
     background-repeat: round;
@@ -88,4 +108,42 @@ body {
     align-content: center;  
     
 }
-
+#Pyth {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 100px);
+    text-align: center;
+    font-size: larger;
+    background-color: yellowgreen;
+    border: 1px solid black;
+    padding: 20px
+}
+#Int {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 100px);
+    text-align: center;
+    font-size: larger;
+    background-color: red;
+    border: 1px solid black;
+    padding: 20px
+}
+#Mod {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 100px);
+    text-align: center;
+    font-size: larger;
+    background-color: orange;
+    border: 1px solid black;
+    padding: 20px
+}
+#computep{
+    background-color: cornflowerblue;
+}
+#computei{
+    background-color: cornflowerblue;
+}
+#computemo{
+    background-color: cornflowerblue;
+}
