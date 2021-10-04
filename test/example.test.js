@@ -1,8 +1,8 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { add_two, int, pyth, subt } from '../calculations.js';
-import { add } from '../calculations';
-import { mult } from '../calculations';
+import { add_two, int, pyth, subt, mod, div } from '../calculations.js';
+import { add } from '../calculations.js';
+import { mult } from '../calculations.js';
 
 const test = QUnit.test;
 
@@ -51,33 +51,33 @@ test('mult function' , (expect) =>{
     const input2 = 2;
     const expected = 6;
     const actual = mult(input1, input2);
-    expected.equal(actual, expected)
+    expect.equal(actual, expected)
 })
 test('div function' , (expect) =>{
     const input1 = 6;
     const input2 = 2;
     const expected = 3;
     const actual = div(input1, input2);
-    expected.equal(actual, expected)
+    expect.equal(actual, expected)
 })
 test('pyth function' , (expect) =>{
     const input1 = 3;
     const input2 = 4;
     const expected = 5;
     const actual = pyth(input1, input2);
-    expected.equal(actual, expected)
+    expect.equal(actual, expected)
 })
 test('Integer function' , (expect) =>{
     const input1 = 5;
     const input2 = 3;
     const expected = 1;
     const actual = int(input1, input2);
-    expected.equal(actual, expected)
+    expect.equal(actual, expected)
 })
 test('modulo function' , (expect) =>{
     const input1 = 21;
     const input2 = 5;
     const expected = 1;
     const actual = mod(input1, input2);
-    expected.equal(actual, expected)
+    expect.equal(actual, expected)
 })
